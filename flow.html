@@ -1,25 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
+
 <body>
-    <script>
-// if else
+	<script>
+		// if else
 
-  var name="prithivi"
+		var name = "pritivi"
 
-if (name=="prithivi") {
-    console.log("correct");
-    
-} else {
-    console.log("wrong");
-    
-}
+		if (name == "prithivi") {
+			console.log("correct");
+
+		} else {
+			console.log("wrong");
+
+		}
 
 
-    </script>
+		// else if
+
+		var a = 20
+
+		if (a == 2) {
+			console.log("correct");
+		}
+		else if (a <= 20) {
+			console.log("greather than");
+		} else {
+			console.log("wrong");
+		}
+
+		//nested if
+
+		a = 10
+		b = 20
+		c = 30
+
+		if (a == 10) {
+			console.log("a correct");
+			if (b == 20) {
+				console.log("b correct");
+				if (c == 30) {
+					console.log("c corect");
+				} else {
+					console.log("wrong");
+				}
+			} else {
+				console.log("wrong");
+			}
+		} else {
+			console.log("wrong");
+		}
+
+		//switch
+
+		var a = "10"
+
+		switch (a) {
+			case "10":
+				console.log("correct");
+				break
+			case 10:
+				console.log("wrong");
+				break
+			default:
+				console.log("unknown number");
+		}
+
+		//nested switch
+
+		let color = "red"
+		let shade = "light"
+
+		switch (color) {
+			case "red":
+
+				switch (shade) {
+					case "dark":
+						console.log("it is a warm red");
+						break
+					case "light":
+						console.log("it is a light red");
+						break
+					default:
+						console.log("unknown shade");
+				}
+				break
+			case "blue":
+				console.log("it is a blue");
+				break
+			default:
+				console.log("unknown color");
+		}
+
+		//
+
+	</script>
 </body>
+
 </html>

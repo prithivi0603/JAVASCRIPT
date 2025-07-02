@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- GetElementByID -->
+
+    <!-- // static -->
+    <p id="demo">hello </p> 
+
+    <!-- // Dynamic -->
+    <input type="text" id="demo2">
+    <p id="demo1"></p>
+
+    <button onclick="res()">submit</button>
+
+    <script>
+        document.getElementById('demo1').innerHTML = document.getElementById('demo').innerHTML + " prithivi "
+        function res() {
+            document.getElementById("demo1").innerHTML = document.getElementById("demo2").value
+        }
+
+    </script>
+
+<!-- ============================================================================================= -->
+    
+    <!-- GetElementByTagName -->
+    
+    <!-- // static -->
+    
+    <p> hii</p>
+    <p></p>
+
+    <!-- // Dynamic  -->
+
+    <input type=" text" >
+  <p></p>
+    <button onclick="check()">submit</button>
+
+    <script>
+    
+    
+    document.getElementsByTagName('p')[1].innerHTML=document.getElementsByTagName('p')[0].innerHTML+" prithivi"
+
+
+    function check(){
+
+        document.getElementsByTagName('p')[4].innerHTML=document.getElementsByTagName('input')[1].value
+    }
+
+    
+    </script>
+
+    <!-- ================================================================================================ -->
+</body>
+
+</html>
