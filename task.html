@@ -10,27 +10,30 @@
 <body>
 
     username:<input type="text" id="u"><br>
-    password:<input type="password" id="p"><br>
+    password:<input type="text" id="p"><br>
     <p id="u1"></p>
     <p id="p1"></p>
 
     <button onclick="check()">submit</button>
 
     <script>
+
         function check() {
-            document.getElementById("u1").innerHTML = document.getElementById("u").value
-            document.getElementById("p1").innerHTML = document.getElementById("p").value
 
-          var a = "ram";
-           var b = "pass";
+            let u = document.getElementById("u").value
+            let p = document.getElementById("p").value
 
-            if ((u == a) && (p == b)) {
+            document.getElementById("u1").innerHTML = u
+            document.getElementById("p1").innerHTML = p
+
+            if ((u == "prithivi") && (p == "pass")) {
                 console.log("valid username");
             } else {
                 console.log("invalid username");
 
             }
         }
+
 
     </script>
 
