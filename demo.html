@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" class="d">
+    <p class="d"></p>
+    <button onclick="ch()">submit</button>
+
+    <script>
+        function ch(){
+            document.getElementsByClassName("d")[1].innerHTML = document.getElementsByClassName("d")[0].value
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="demo1()">
+
+    <h1>CLICK EVENT</h1>
+    <!--onclick-->
+    <!--ondblclick-->
+    <!--onchange-->
+    <!--onload-->
+    <!--onsubmit-->
+    <!--onreset-->
+
+    <button onclick="demo()">onclick</button><br><br>
+    <button ondblclick="demo1()">ondblclick</button><br><br>
+    <input type="text" placeholder="onchange" id="name" onchange="demo2()">
+    <p id="out"></p><br>
+    <form onsubmit="demo3(event)">
+        <input type="text" id="num">
+        <p id="p"></p>
+        <button>submit</button><br><br>
+        <button onreset="re(event)">reset</button><br>
+    </form>
+
+    <hr>
+
+    <h1>KEYBOARD EVENT</h1>
+
+    <!--onkeypress-->
+
+    <input type="text" id="a" onkeypress="demo4()">
+    <p id="b"></p>
+    <hr>
+
+    <h1>MOUSE EVENT</h1>
+
+
+    <script>
+
+    //click        
+
+        function demo() {
+            console.log("demo1 onclick");
+        }
+
+        function demo1() {
+            console.log("demo2 dblclick");
+
+        }
+
+        function demo2() {
+            var a = document.getElementById("name").value
+            document.getElementById("out").innerHTML = a
+        }
+
+        function re(event) {
+
+            event.preventDefault()
+            document.getElementById("num").value = " "
+        }
+
+        function demo3(event) {
+            event.preventDefault()   //==>page not refresh 
+            var b = document.getElementById("num").value
+            document.getElementById("p").innerHTML = b
+            re(event)
+        }
+
+        //keypress
+
+        function demo4() {
+            let z = document.getElementById("a").value
+            document.getElementById("b").innerHTML = z
+        }
+
+        //mouse
+
+        
+    </script>
+
+
+</body>
+
+</html>

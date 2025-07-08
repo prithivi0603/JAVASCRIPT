@@ -12,7 +12,7 @@
     <!-- GetElementByID -->
 
     <!-- // static -->
-    <p id="demo">hello </p> 
+    <p id="demo">hello </p>
 
     <!-- // Dynamic -->
     <input type="text" id="demo2">
@@ -28,36 +28,106 @@
 
     </script>
 
-<!-- ============================================================================================= -->
-    
+    <!-- ============================================================================================= -->
+
     <!-- GetElementByTagName -->
-    
+
     <!-- // static -->
-    
+
     <p> hii</p>
     <p></p>
 
+
     <!-- // Dynamic  -->
 
-    <input type=" text" >
-  <p></p>
+    <input type=" text">
+    <p> </p>
     <button onclick="check()">submit</button>
 
+
     <script>
-    
-    
-    document.getElementsByTagName('p')[1].innerHTML=document.getElementsByTagName('p')[0].innerHTML+" prithivi"
 
 
-    function check(){
+        document.getElementsByTagName('p')[1].innerHTML = document.getElementsByTagName('p')[0].innerHTML + " prithivi"
 
-        document.getElementsByTagName('p')[4].innerHTML=document.getElementsByTagName('input')[1].value
-    }
 
-    
+        function check() {
+
+            document.getElementsByTagName('p')[4].innerHTML = document.getElementsByTagName('input')[1].value
+        }
+
+
     </script>
 
     <!-- ================================================================================================ -->
+
+    <!--class name-->
+
+    <!--static-->
+
+    <p class="demo">welcome</p>
+    <p class="demo"></p>
+
+    <!--dynamic-->
+
+    <input type="text" class="d">
+    <p class="d"></p>
+    <button onclick="d()">submit</button>
+
+
+
+    <script>
+
+        document.getElementsByClassName("demo")[1].innerHTML = document.getElementsByClassName("demo")[0].innerHTML
+
+        function d() {
+            document.getElementsByClassName("d")[1].innerHTML = document.getElementsByClassName("d")[0].value
+        }
+
+    </script>
+
+    <!--======================================================================================================-->
+
+    <!-- queryselector-->
+
+    <!--static-->
+
+    <p id="car">hello world!</p>
+
+    <!--queryselectorall-->
+
+    <p class="box">box 1</p>
+    <p class="box">box 2</p>
+
+    <!--dynamic-->
+
+    <input type="text" id="name" placeholder="enter your name">
+    <p id="op"></p>
+    <button onclick="chk()">submit</button>
+
+    <script>
+        let a = document.querySelector("#car")
+        console.log(a.textContent);
+
+        let b = document.querySelectorAll(".box")
+        console.log(b[0].textContent);
+
+        let input = document.querySelector("#name")
+        let output = document.querySelector("#op")
+
+        function chk() {
+            const name = input.value;
+            op.textContent = "  hello " + name + "!"
+            console.log(op.textContent);
+
+
+        }
+    </script>
+
+<!--=====================================================================================================-->
+
+
+
 </body>
 
 </html>
