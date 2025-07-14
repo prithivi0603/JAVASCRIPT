@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+  
+
+  <button onclick="al()">Alert</button>
+  <button onclick="con()">Confirm</button>
+  <button onclick="pro()">Prompt</button>
+  <p id="d"></p>
+
+  <script>
+
+function al(){
+    alert("welcome");
+}
+
+function con(){
+    confirm("ok")
+}
+
+function pro(){
+ let a=prompt("enter your name"," ")
+    let b=prompt("enter your age"," ")
+
+    document.getElementById("d").innerHTML = a +  b
+}
+  </script>
+    
+</body>
+</html>

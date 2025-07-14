@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .a{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 
 <body onload="demo1()">
@@ -40,7 +48,13 @@
 
     <h1>MOUSE EVENT</h1>
 
+    <div class="a" id="b1">click</div>
+    <div class="a" id="b2">hover</div>
+    <div class="a" id="b3">hold in / out</div>
+    <div class="a" id="b4">click release</div>
+  
 
+ 
     <script>
 
     //click        
@@ -81,6 +95,26 @@
 
         //mouse
 
+        document.getElementById("b1").addEventListener("click",function(){
+            alert("box is clicked")
+        })
+
+        document.getElementById("b2").addEventListener("mouseover", function(){
+            this.style.backgroundColor="red"
+        })
+
+        document.getElementById("b3").addEventListener("mouseout", function(){
+            this.style.backgroundColor="black"
+        })
+
+        document.getElementById("b3").addEventListener("mousedown", function(){
+            this.style.backgroundColor="yellow"
+        })
+
+        document.getElementById("b4").addEventListener("mouseup",function(){
+            alert("mous is relesed")
+        })
+        
         
     </script>
 

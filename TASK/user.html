@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    username <input type="text" id="u"><br>
+    password <input type="password" id="p"><br>
+    <button onclick="check()">login</button>
+
+    <script>
+
+        function check() {
+
+
+            let a = document.getElementById("u").value
+            localStorage.setItem("name", a)
+
+            let b = document.getElementById("p").value
+            localStorage.setItem("pass", b)
+
+            let c = localStorage.getItem("name")
+            let d = localStorage.getItem("pass")
+
+            if (a == c && b == d) {
+                alert("valid ")
+
+            } else {
+                alert("invalid")
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
