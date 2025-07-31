@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <!--  <h1 id="h">hello</h1>
+    <input type="button" value="red" onclick="red()" />
+    <input type="button" value="green" onclick="green()" />
+    <input type="button" value="blue" onclick="blue()" />
+ -->
+
+</body>
+<script>
+
+    /*     function red() {
+            document.getElementById("h").style = "color:red;"
+        }
+        function green() {
+            let r = document.getElementById("h")
+            r.style = "color:green;text-transform:uppercase"
+    
+        }
+        function blue() {
+            let r = document.getElementById("h")
+            r.style = "color:blue"
+    
+        }document.writeln("<br>")
+    
+        //forward
+        //document.writeln("<center>")*/
+    
+        for (let i = 1; i <= 5; i++) {
+            for (a = 5; a >= i; a--) {
+                document.writeln(" - ")
+            }
+            for (let j = 1; j <= i; j++) {
+                document.writeln("*-")
+            } document.writeln("<br>")
+        }
+    
+    
+        //backward
+    
+        for (let i = 1; i <= 5; i++) {
+            for (a = 1; a <= i; a++) {
+                document.writeln(" -")
+            }
+            for (let j = 5; j >= i; j--) {
+                document.writeln(" #-")
+            } document.writeln("<br>")
+        }
+    
+        //numberformatting
+    
+    
+        a = 1
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= i; j++) {
+                document.writeln(a++)
+    
+            } document.writeln("<br>")
+        }
+    
+        //101010
+    
+        a = 1
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                document.writeln(a++ % 2)
+    
+             } document.writeln("<br>")
+        } 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

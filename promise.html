@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+        function asq(a) {
+        return a * a
+    }
+    function bsq(b) {
+        return b * b
+    }
+    function tab(a, b) {
+        return 2 * a * b
+    }
+
+    function calc() {
+        let a = 2, b = 3
+        let x, y, z
+
+        let promise = new Promise((resolve, reject) => {
+
+            setTimeout(() => {
+                console.log("level 1");
+                x = asq(a)
+            }, 800)
+            setTimeout(() => {
+                console.log("level 2");
+                y = bsq(b)
+            }, 1000)
+            setTimeout(() => {
+                console.log("level 3");
+                z = tab(a, b)
+            }, 800)
+            setTimeout(() => {
+                console.log("level 4");
+                resolve(x + y + z)
+            }, 2000)
+        })
+        return promise
+    }
+    calc()
+        .then((val) => {
+            console.log(val);
+
+        })
+        
+        .catch((err) => {
+            console.log(err);
+
+        })
+
+</script>
+</html>

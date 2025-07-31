@@ -9,45 +9,88 @@
 
 <body>
     <script>
-        function samp() {
+        /*
+    
+        function function_name(argument1, aargument2....){
+            statemnt
+            .
+            .
+            statemnt
+    
+        }
+        */
+
+        function samp() {                        // let samp()=>{}
             console.log("hello prithivi")
 
         }
 
         samp()
 
-        <!--single parm-->
+       //single parmeter
 
-        function demo(a){
+
+        function demo(a) {     //arguments   let demo(a)=>{}
             console.log(a);
-              
+
         }
 
-        demo("arun")
+        demo("arun")     //parameters
 
         // multiple parm
 
 
-        function de(a,b,c){
-            console.log(a+b+c);
-            
+        function de(a, b, c) {
+            console.log(a + b + c);
+
         }
-        
-        de(5,5,5)
+
+        de(5, 5, 5)
 
 
-        // arrow fun
 
-       var bike = (a,b,c)=>{
-            console.log(a+b+c);
+        // arrow
 
-       }
- 
-      bike(2,3,5)
-        
+        //function bike(a,,b,c){} 
 
-      
+        var bike = (a, b, c) => {
+            console.log(a + b + c);
 
+        }
+
+        bike(2, 3, 5)
+
+
+
+
+        //return
+
+        function add(a, b) {             // const add=(a,b) =>{}    function add(a,b){}
+            console.log("function");
+
+            let x = a + b
+            return x  //return the value will be terminated
+        }
+        let v = add(10, 20)
+        console.log(v);
+
+
+
+
+        function calc(a, sy, b) {
+            switch (sy) {
+                case '+':
+                    return a + b
+                case '-':
+                    return a - b
+                case '*':
+                    return a * b
+                case '/':
+                    return a / b
+            }
+        }
+        let val = calc(10, '*', 10)
+        document.writeln(val)
 
     </script>
 

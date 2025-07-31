@@ -8,25 +8,28 @@
 </head>
 
 <body>
+
+
     <script>
+
         // for loop    
 
 
-        for (a = 10; a >= 0; a--) {
-            console.log(a);
+        for (a = 1; a <= 10; a++) {
+            document.writeln(a);
         }
 
         // while 
 
         let z = 1
         while (z <= 5) {
-            console.log("z is " + z);
+            document.writeln(z);
             z++;
         }
 
         // do while
 
-        let r = 5
+        let r = 6
 
         do {
             console.log("r is " + r);
@@ -34,21 +37,34 @@
         } while (r <= 7);
 
 
-        var a = 1
 
-        while (a <= 5) {
-            console.log("a is" + a);
-            a++;
+
+        var a = 5
+
+        while (a >= 1) {
+            document.writeln("a is " + a);
+            a--;
 
         }
 
+        for ( i = 1, j = 5; i <= 5; i++, j--) {
+            document.writeln(i + " " + j +"<br>")
+        }
 
-        ,
-        
+
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=i;j++){
+                document.writeln(j)
+            }document.writeln("<br>")
+        }
+
+         
+
 
 
 
     </script>
+
 </body>
 
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //JSON= Java Script Object Notation
+
+
+    const student = {
+        name: "prithivi",
+        age: 20,
+        dept: "cs"
+    }
+    console.log(student.name);
+    console.log(student.age);
+    console.log(student.dept);
+
+    const std = new Object()
+    std.name = "raj"
+    std.age = 20
+    console.log(std.name);
+    console.log(std.age);
+
+    //functionality
+
+    let emp = {
+        first: "prithivi",
+        last: "raj",
+        age: 20,
+        fullname: function () {
+            return this.first + " " + this.last      //const fullname()=>{}
+        }
+    }
+    console.log(emp.fullname());
+
+    const per = {}
+    per.name = "kumar"
+    console.log(per.name);
+
+    //object constructor
+
+    function employee(firstname,lastname,age,dept ) {
+
+        this.firstname = firstname
+        this.lastname = lastname
+        this.age = age
+        this.dept = dept
+        this.fullname = function(){
+            return this.firstname+" "+this.lastname
+
+        }
+
+    }
+
+const e1=new employee("prithivi","raj",20,"cs")
+const e2=new employee("ram","raj",20,"cs")
+console.log(e1);
+console.log(e2);
+console.log(e1.fullname());
+console.log(e2.fullname());
+
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+
+<body>
+
+    <input type="button" value="closed " onclick="window.close()"><br><br>
+    <input type="button" value="google" onclick="window.location.assign('https://google.com')"><br><br>
+    <input type="button" value="goto google" onclick="google()">
+
+
+    <input type="button" value="alert" onclick="alert()">
+
+</body>
+<script>
+    //BOM --> browser object model
+
+    let w = window.innerHeight
+    let h = window.innerWidth
+    console.log(w, h);
+
+    console.log(window.screen.width);
+    console.log(window.screen.height);
+
+    //DPI --> Dots per inch
+
+    // location
+
+    console.log(document.location.href);
+    console.log(document.location.hostname);
+    console.log(document.location.pathname);
+    console.log(document.location.protocol);
+
+
+    const google = (() => {
+        window.location.href = 'https://www.google.com/'
+    })
+//navigator
+
+    console.log(navigator.cookieEnabled);
+    console.log(navigator.language);
+    console.log(navigator.appName);
+
+
+    
+    
+    
+    
+
+
+
+
+</script>
+
+</html>

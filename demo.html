@@ -9,15 +9,78 @@
 
 <body>
 
-    <input type="text" class="d">
-    <p class="d"></p>
-    <button onclick="ch()">submit</button>
 
-    <script>
-        function ch(){
-            document.getElementsByClassName("d")[1].innerHTML = document.getElementsByClassName("d")[0].value
-        }
-    </script>
+    <h1 id="title" onmouseover="titleover()" onmouseout="titleout()">simple calculator</h1>
+
+    <input type="text" placeholder="enter the number" id="n1"><br><br>
+    <input type="text" placeholder="enter the number" id="n2"><br><br>
+    <input type="text" placeholder="result" id="r"><br><br>
+    <input type="button" value="ADDITION" onclick="add()">
+    <input type="button" value="SUBTRACTION" onclick="sub()"><br><br>
+    <input type="button" value="MULTIPLICATION" onclick="mul()">
+    <input type="button" value="DIVISION" onclick="div()">
+
+    <input type="text" id="demo" oninput="txt()">
+    <h1 id="p"></h1>
+
+
+    <button onclick="document.getElementById('date').innerHTML= Date()">date</button>
+    <h1 id="date"></h1>
+
 </body>
+<script>
+    function add() {
+        const a = Number(document.getElementById("n1").value);
+        const b = Number(document.getElementById("n2").value);
+        document.getElementById("r").value = a + b;
+    }
+    function sub() {
+        const a = Number(document.getElementById("n1").value);
+        const b = Number(document.getElementById("n2").value);
+        document.getElementById("r").value = a - b;
+    }
+    function mul() {
+        const a = Number(document.getElementById("n1").value);
+        const b = Number(document.getElementById("n2").value);
+        document.getElementById("r").value = a * b;
+    }
+
+    function div() {
+        const a = Number(document.getElementById("n1").value);
+        const b = Number(document.getElementById("n2").value)
+        document.getElementById("r").value = a / b
+    }
+
+    function titleover() {
+        document.getElementById("title").style = "color:red;text-transform:uppercase"
+    }
+    function titleout() {
+        document.getElementById("title").style = "color:yellow"
+    }
+
+    function txt() {
+        const val = document.getElementById("demo").value
+        document.getElementById("p").innerText = "hi welcome " + val
+
+    }
+
+
+    let bike = ["mt", "pulsar", "hero", "r15"]
+    /*  console.log(bike[0]);
+     console.log(bike[1]);
+     console.log(bike[2]); */
+
+    for (let i = 0; i <= bike.length[bike]; i++) {
+        console.log(bike[i]);
+
+    }
+
+
+
+
+
+
+
+</script>
 
 </html>

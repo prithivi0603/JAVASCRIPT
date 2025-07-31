@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>operators</title>
 </head>
+
 <body>
     <script>
-
-    //Arithmetic operator        
-
-        let a=10
-        let b=5
-
-        console.log("addition: "+(a+b));
-        console.log("subtraction: "+(a-b));
-        console.log("multiplication:"+(a*b));
-        console.log("division:"+(a/b));
-        console.log("modules:"+(a%b));
-        console.log("exponent:"+(a**b));
         
-    //comparsion operator    
 
-    let x=5
-    let y=5
+        //Arithmetic operator      
 
-    console.log("Equal :"+(x == y));
-    console.log("Not equal :"+(x !=y ));    //check value only
+        let a = 10
+        let b = 5
 
-    console.log("strict equal :"+(x === y));
-    console.log("strict not equal :"+(x !== y));   // check datatye and value
+        console.log("addition: " + (a + b));
+        console.log("subtraction: " + (a - b));
+        console.log("multiplication:" + (a * b));
+        console.log("division:" + (a / b));     //quotient
+        console.log("modules:" + (a % b));  //remainder
+        console.log("exponent:" + (a ** b));
 
-    console.log("greather than :"+(x > y));         
-    console.log("less than :"+(x < y));
 
-    console.log("greather than or equal :"+(x >= y));
-    console.log("less than or equal to :"+(x <= y));
+        //comparsion operator 
 
-    //logical operators
 
-    let o=2
-    let p=10 
-    let q=5
-    
-    console.log("AND :"+(p == 10  && q == 5 || o == 1));  //any one false o/p = false
-    console.log("OR :"+(p==10 || q==2));      // any one true o/p = true
+        let x = 5, y = 4
 
-    if(!(p<5))
-    console.log("p is no less than 5");
-    else
-    console.log("p is less than 5");
+        console.log("Equal :" + (x == y));
+        console.log("Not equal :" + (x != y));    //check value only
 
-    //Assignment operators  
+        console.log("strict equal :" + (x === y));
+        console.log("strict not equal :" + (x !== y));   // check datatye and value
 
-    let num=10
-     
-    num+=5;  //num=10+5
-    console.log("addition :"+num);
-    num-=3
-    console.log("subtraction :"+num);
-    num*=2;
-    console.log("multiplication :"+num);
-    num /=4;
-    console.log("division :"+num);
-    num %=3
-    console.log("modules :"+num);
-    num**=2;
-    console.log("exponent :"+num);
-    
-    //bitwise operator
+        console.log("greather than :" + (x > y));
+        console.log("less than :" + (x < y));
 
-    let m=5;
-    let n=3;
+        console.log("greather than or equal :" + (x >= y));
+        console.log("less than or equal to :" + (x <= y));
 
-    console.log("bitwise and :"+(m&n));
-    console.log("bitwise or :"+(m|n));
-    console.log("bitwise xor: "+(m^n));
-    console.log("bitwise not :"+~m);
-    
-    //ternary operator
 
-    let age=20
-    let result=(age>=18)?"you r eligible to vote" : "you r not eligible to vote"
-     console.log(result)
-        
-        
-        
+        //logical operators
+
+        let o = 2
+        let p = 10
+        let q = 5
+
+        console.log("AND :" + (p == 10 && q == 5 || o == 1));  //any one false o/p = false
+        console.log("OR :" + (p == 10 || q == 2));      // any one true o/p = true
+
+        if (!(p < 5))
+            console.log("p is no less than 5");
+        else
+
+            console.log("p is less than 5");
+
+        //Assignment operators  
+
+        let num = 10
+
+        num += 5;  //num=10+5
+        console.log("addition :" + num);
+        num -= 3
+        console.log("subtraction :" + num);
+        num *= 2;
+        console.log("multiplication :" + num);
+        num /= 4;
+        console.log("division :" + num);
+        num %= 3
+        console.log("modules :" + num);
+        num **= 2;
+        console.log("exponent :" + num);
+
+        //bitwise operator
+
+        let m = 5;
+        let n = 3;
+
+        console.log("bitwise and :" + (m & n));
+        console.log("bitwise or :" + (m | n));
+        console.log("bitwise xor: " + (m ^ n));
+        console.log("bitwise not :" + ~m);
+
+        //ternary operator
+
+        let age = 20  
+        let result = (age >= 18) ? "you r eligible to vote" : "you r not eligible to vote"
+        console.log(result)
+
     </script>
 </body>
 </html>

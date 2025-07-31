@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+
+  <button onclick="alert()">Alert</button>
+  <button onclick="confirm()">Confirm</button>
+  <button onclick="pro()">Prompt</button>
+  <p id="d"></p>
+
+  <script>
+
+    function alert() {
+      alert("welcome");
+    }
+
+    function confirm() {
+      let value = confirm("ok")
+      if (value) {
+        // console.log(window.close());
+
+
+      }
+    }
+
+    function pro() {
+      let a = prompt("enter your name", " ")
+      let b = prompt("enter your age", " ")
+
+      // document.getElementById("d").innerHTML = a + b
+
+      console.log(a);
+      if(a==null || a==" "){
+        console.log("user have not entered");
+        
+      }else{
+        console.log("user have some input");
+        
+      }
+      
+
+
+    }
+  </script>
+
+</body>
+
+</html>

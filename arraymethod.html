@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let fruits = ["apple", "orange", "pineapple"]
+
+    console.log(fruits.length);
+
+    console.log(fruits.join('-'));
+
+    console.log(fruits.at(2));
+    console.log(fruits[2]);
+
+    console.log("pop");
+    let f = fruits.pop()
+    console.log(f);
+    console.log(fruits);
+    console.log(fruits.pop());
+
+    console.log("push");
+    console.log(fruits.push("cherry"));
+    console.log(fruits);
+
+    //stack  last in first out      push/pop
+    //queue first in first out /lilo     shift/unshift
+
+    let veg = ["tomato", "onion", "chilli"]
+    let ab = veg.concat(fruits)
+    console.log(ab);
+
+    ab.splice(0, 3) // position , number of element
+    console.log(ab);
+
+    let a = ["a", "b", "c", "d"]
+    let b = a.slice(0, 2)
+    console.log(b);
+
+    let fri = ["pineapple", "orange", "banana", "apple"]
+    console.log(fri);
+    fri.sort()
+    console.log(fri);
+
+    fri.reverse()
+    console.log(fri);
+
+
+    const callback = (a) => {
+        console.log(a);
+
+    }
+    fri.forEach(callback)
+
+    fri.forEach((a) => {
+        console.log(a);
+    })
+
+    var fruit = ["a", "o", "p", "b"]
+
+    const p = fruit.map((b) => {
+        console.log(b);
+
+
+    })
+
+    // JSON ARRAY
+
+
+    let person = [
+        {
+            name: "ram",
+            age: 30
+
+        },
+        {
+            name: "ravi",
+            age: 20
+        }
+    ]
+
+    //map
+    person.map((e) => {
+        if (e.age >= 25)
+            console.log(e.name);
+
+    })
+
+
+    let number = [5, 2, 3, 5, 7]
+
+    const result = number.map((number) => {
+        return number +10
+    })
+    console.log(result);
+
+//callback
+
+
+
+
+
+
+</script>
+
+</html>
