@@ -1,0 +1,73 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    document.cookie = "name=prithivi"
+    document.cookie = "age=20"
+
+    // console.log(document.cookie);
+
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+let Count = new Number(getCookie("Count"))
+Count++
+document.cookie ="Count=" + Count
+console.log("you are visting "+ Count +" times")
+        console.log("you visible last time at "+getCookie("visited_at"))
+document.cookie ="visited_at=" + new Date()
+  
+</script
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a1" >
+    <button onclick="demo()"> submit</button>
+
+</body>
+<script>
+//     document.cookie = "name=prithivi"
+// console.log(document.cookie);
+
+
+
+function demo() {
+
+    let a = document.getElementById("a1").value
+    var c = document.cookie = a
+    console.log(c);
+} 
+</script>
+</html>

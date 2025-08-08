@@ -11,31 +11,29 @@
 
     username:<input type="text" id="u"><br>
     password:<input type="text" id="p"><br>
-    <p id="u1"></p>
-    <p id="p1"></p>
 
     <button onclick="check()">submit</button>
 
     <script>
+        // const a = localStorage.setItem("name", "prithivi")
+        // const b = localStorage.setItem("password", "1234")
+
 
         function check() {
 
             let u = document.getElementById("u").value
             let p = document.getElementById("p").value
 
-            document.getElementById("u1").innerHTML = u
-            document.getElementById("p1").innerHTML = p
-
             var a = document.getElementById("u").value
             sessionStorage.setItem("name", a)
-            console.log(sessionStorage.getItem("name"));
-            
-            var b = document.getElementById("").value
+            // console.log(sessionStorage.getItem("name"));
+
+            var b = document.getElementById("p").value
             sessionStorage.setItem("pass", b)
-            console.log(sessionStorage.getItem("pass"));
+            // console.log(sessionStorage.getItem("pass"));
 
             if ((u == a) && (p == b)) {
-                console.log("valid username");
+                alert("valid username");
             } else {
                 console.log("invalid username");
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select name="fruits" id="fruits">
+        <option value="apple">APPLE</option>
+        <option value="orange">ORANGE</option>
+        <option value="pineapple">PINEAPPLE</option>
+        <option value="cherry">CHERRY</option>
+    </select>
+
+
+
+    <select name="fruits" id="fruits1">
+        <option value="apple">APPLE</option>
+        <option value="orange">ORANGE</option>
+        <option value="pineapple">PINEAPPLE</option>
+        <option value="cherry">CHERRY</option>
+    </select><br><br>
+
+    <button onclick="move(1)">>>></button>
+    <button onclick="move(-1)"><<<</button>
+</body>
+<script>
+    function move(dir) {
+        // dir = 1: move from fruits to fruits1, dir = -1: move from fruits1 to fruits
+        let from, to;
+        if (dir === 1) {
+            from = document.getElementById('fruits');
+            to = document.getElementById('fruits1');
+        } else {
+            from = document.getElementById('fruits1');
+            to = document.getElementById('fruits');
+        }
+        // Move selected option
+        if (from.selectedIndex !== -1) {
+            let option = from.options[from.selectedIndex];
+            let newOption = option.cloneNode(true);
+            to.appendChild(newOption);
+            from.remove(from.selectedIndex);
+        }
+    }
+
+    if (from.selectedIndex !== -1) {
+        let option = from.option[from.selectedIndex]
+        let newOption = option.cloneNode(true)
+        to.appendChild(newOption)
+        from.remove(from.selectedIndex)
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    USERNAME <input type="text" id="name">
+    PASSORD <input type="password" id="pass">
+    <input type="button" onclick="check()" value="login">
+</body>
+<script>
+
+    const check = () => {
+
+        let a = document.getElementById("name").value
+        let b = document.getElementById("pass").value
+
+        if (a ==="" && b ==="") {
+            alert("Please fill in all required fields.");
+        } else{
+            alert("message sent sucessful")
+        }
+        
+
+        if (a == "prithivi" && b == "1234") {
+            alert("LOGIN SUCESSFUL")
+        } else {
+            alert("LOGIN FAILED")
+        }
+    }
+
+</script>
+
+</html>

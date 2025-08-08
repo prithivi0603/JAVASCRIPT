@@ -15,7 +15,7 @@
     </style>
 </head>
 
-<body onload="demo1()">
+<body onload="">
 
     <h1>CLICK EVENT</h1>
     <!--onclick-->
@@ -41,6 +41,7 @@
     <h1>KEYBOARD EVENT</h1>
 
     <!--onkeypress-->
+    <!-- oninput -->
 
     <input type="text" id="a" onkeypress="demo4()">
     <p id="b"></p>
@@ -100,6 +101,7 @@
             document.getElementById("b").innerHTML = z
         }
 
+
         //mouse
 
         document.getElementById("b1").addEventListener("click",function(){
@@ -121,6 +123,7 @@
         document.getElementById("b4").addEventListener("mouseup",function(){
             alert("mous is relesed")
         })
+        
         
         
     </script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    USERNAME <input type="text" id="username"><br><br>
+    PASSWORD: <input type="password" id="password"><br><br>
+
+    <input type="button" onclick="check()" value="submit">
+
+</body>
+<script>
+
+    function check() {
+
+        const name = document.getElementById("username").value
+        const pass = document.getElementById("password").value
+
+        if (name ==" " || pass == " ") {
+            alert("Please fill in all required fields.");
+        } else {
+            alert("Message sent successfully!");
+        }
+    }
+</script>
+
+</html>

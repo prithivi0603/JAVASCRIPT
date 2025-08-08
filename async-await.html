@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     async function call() {
+       await  fetch("https://dummyjson.com/posts/1?delay=5000")
+        .then(res => res.json())
+        .then(console.log)
+        await fetch("https://dummyjson.com/posts/5?delay=200")
+        .then(res => res.json())
+        .then(console.log)
+    }
+    call()
+</script>
+</html>
